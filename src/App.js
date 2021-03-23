@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="bg-primary text-white display-4">React</h1>
-      <div>
+      <div className="container">
         <h4 className="my-3">Memo.</h4>
         <MemoPage />
       </div>

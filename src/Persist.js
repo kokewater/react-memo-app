@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function userPersist(ky, initVal) {
+function usePersist(ky, initVal) {
     const key = "hooks:" + ky
     const value = () => {
         try {
@@ -14,7 +14,7 @@ function userPersist(ky, initVal) {
     const setValue = (val) => {
         try {
             setSavedValue(val)
-            window.localStorage.setItem(key, JSON,stringify(val))
+            window.localStorage.setItem(key, JSON.stringify(val))
         } catch(err) {
             console.log(err)
         }
